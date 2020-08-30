@@ -7,6 +7,10 @@
 
 ---
 
+#### Library Structure:
+
+![](https://i.ibb.co/LkSJzjY/Screenshot-from-2020-08-30-19-18-06.png)
+
 ---
 
 <img src="https://i.ibb.co/znhKw2f/I-serve-with-joy.png" width="25%">
