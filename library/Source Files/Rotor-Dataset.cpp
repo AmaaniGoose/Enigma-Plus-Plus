@@ -2,7 +2,7 @@
 using namespace std;
 
 vector<vector<pair<char,char>>> settings(){
-	vector<vector<pair<char,char>>> Rotors(7);
+	vector<vector<pair<char,char>>> Rotors(5);
 
 	Rotors[0].push_back(make_pair('A','L'));	Rotors[0].push_back(make_pair('B','E'));
 	Rotors[0].push_back(make_pair('C','Y'));	Rotors[0].push_back(make_pair('D','J'));
@@ -73,34 +73,6 @@ vector<vector<pair<char,char>>> settings(){
 	Rotors[4].push_back(make_pair('U','S'));	Rotors[4].push_back(make_pair('V','B'));
 	Rotors[4].push_back(make_pair('W','N'));	Rotors[4].push_back(make_pair('X','M'));
 	Rotors[4].push_back(make_pair('Y','H'));	Rotors[4].push_back(make_pair('Z','L'));
-
-	Rotors[5].push_back(make_pair('A','E'));	Rotors[5].push_back(make_pair('B','N'));
-	Rotors[5].push_back(make_pair('C','K'));	Rotors[5].push_back(make_pair('D','Q'));
-	Rotors[5].push_back(make_pair('E','A'));	Rotors[5].push_back(make_pair('F','U'));
-	Rotors[5].push_back(make_pair('G','Y'));	Rotors[5].push_back(make_pair('H','W'));
-	Rotors[5].push_back(make_pair('I','J'));	Rotors[5].push_back(make_pair('J','I'));
-	Rotors[5].push_back(make_pair('K','C'));	Rotors[5].push_back(make_pair('L','O'));
-	Rotors[5].push_back(make_pair('M','P'));	Rotors[5].push_back(make_pair('N','B'));
-	Rotors[5].push_back(make_pair('O','L'));	Rotors[5].push_back(make_pair('P','M'));
-	Rotors[5].push_back(make_pair('Q','D'));	Rotors[5].push_back(make_pair('R','X'));
-	Rotors[5].push_back(make_pair('S','Z'));	Rotors[5].push_back(make_pair('T','V'));
-	Rotors[5].push_back(make_pair('U','F'));	Rotors[5].push_back(make_pair('V','T'));
-	Rotors[5].push_back(make_pair('W','H'));	Rotors[5].push_back(make_pair('X','R'));
-	Rotors[5].push_back(make_pair('Y','G'));	Rotors[5].push_back(make_pair('Z','S'));
-
-	Rotors[6].push_back(make_pair('A','R'));	Rotors[6].push_back(make_pair('B','D'));
-	Rotors[6].push_back(make_pair('C','O'));	Rotors[6].push_back(make_pair('D','B'));
-	Rotors[6].push_back(make_pair('E','J'));	Rotors[6].push_back(make_pair('F','N'));
-	Rotors[6].push_back(make_pair('G','T'));	Rotors[6].push_back(make_pair('H','K'));
-	Rotors[6].push_back(make_pair('I','V'));	Rotors[6].push_back(make_pair('J','E'));
-	Rotors[6].push_back(make_pair('K','H'));	Rotors[6].push_back(make_pair('L','M'));
-	Rotors[6].push_back(make_pair('M','L'));	Rotors[6].push_back(make_pair('N','F'));
-	Rotors[6].push_back(make_pair('O','C'));	Rotors[6].push_back(make_pair('P','W'));
-	Rotors[6].push_back(make_pair('Q','Z'));	Rotors[6].push_back(make_pair('R','A'));
-	Rotors[6].push_back(make_pair('S','X'));	Rotors[6].push_back(make_pair('T','G'));
-	Rotors[6].push_back(make_pair('U','Y'));	Rotors[6].push_back(make_pair('V','I'));
-	Rotors[6].push_back(make_pair('W','P'));	Rotors[6].push_back(make_pair('X','S'));
-	Rotors[6].push_back(make_pair('Y','U'));	Rotors[6].push_back(make_pair('Z','Q'));
 
 	return Rotors;
 }

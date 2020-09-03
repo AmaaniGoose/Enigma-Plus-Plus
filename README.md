@@ -7,8 +7,17 @@
 
 ---
 
-**Planned Version**:
-- [ ] v1.0.0 *Navy M4 Enigma*
+**Classic Enigma** *V1.0.0*
+
+![](https://img.shields.io/static/v1?label=Rotors&message=III&#8226;V&color=c00&style=for-the-badge)
+![](https://img.shields.io/static/v1?label=Plugs&message=10&color=0c0&style=for-the-badge)
+![](https://img.shields.io/static/v1?label=Characters&message=26&color=00d&style=for-the-badge)
+
+A simulation of Classic Enigma Cipher Machine.
+> Entropy of Encryption: ![formula](https://render.githubusercontent.com/render/math?math=\lgroup^5P_3\cdot26^3\cdot\frac{26!}{6!\cdot10!\cdot2^10}\rgroup=158,962,555,217,826,360,000)
+
+**Planned Versions**:
+- [ ] v1.0.0 *Classic Enigma* `Under Development`
 - [ ] v2.0.0 *Enigma Höchste*
 
 ---
