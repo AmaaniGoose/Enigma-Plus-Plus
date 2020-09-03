@@ -7,6 +7,9 @@
 
 ---
 
+**Planned Version**:
+- [ ] v1.0.0 *Navy M4 Enigma*
+- [ ] v2.0.0 *Enigma Höchste*
 
 ---
 
