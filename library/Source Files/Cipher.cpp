@@ -9,3 +9,13 @@ string Enigma::encrypt(string message){
 	return message;
 
 }
+
+string Enigma::decrypt(string message){
+
+	capitalize(message);
+
+	swap(message);
+
+	return message;
+
+}

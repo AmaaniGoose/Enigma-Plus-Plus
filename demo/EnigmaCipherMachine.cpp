@@ -18,8 +18,8 @@ int main(){
 	enigma.setPlug('Q','V');	enigma.setPlug('T','U');
 
 	cout<<"Encoded Message: ";
-	cout<<enigma.encrypt("Hello World!");
+	cout<<enigma.encrypt("Hello World!\n");
 
-	// cout<<"Decoded Message: ";
-	// cout<<enigma.decrypt("ANJUS TKONS!");
+	cout<<"Decoded Message: ";
+	cout<<enigma.decrypt("ANJUS TKONS!\n");
 }

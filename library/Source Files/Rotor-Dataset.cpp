@@ -76,3 +76,17 @@ vector<vector<pair<char,char>>> settings(){
 
 	return Rotors;
 }
+
+vector<pair<char,char>> reflection(){
+	vector<pair<char,char>> Reflector;
+
+	Reflector.push_back(make_pair('Q','Y'));
+	Reflector.push_back(make_pair('M','A'));	Reflector.push_back(make_pair('K','R'));
+	Reflector.push_back(make_pair('F','S'));	Reflector.push_back(make_pair('U','H'));
+	Reflector.push_back(make_pair('V','D'));	Reflector.push_back(make_pair('E','C'));
+	Reflector.push_back(make_pair('W','X'));	Reflector.push_back(make_pair('T','B'));
+	Reflector.push_back(make_pair('J','I'));	Reflector.push_back(make_pair('Z','G'));
+	Reflector.push_back(make_pair('N','L'));	Reflector.push_back(make_pair('P','O'));
+
+	return Reflector;
+}

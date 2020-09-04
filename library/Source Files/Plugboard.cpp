@@ -1,7 +1,9 @@
 #include "../Header Files/Enigma-Library.h"
 
 void Enigma::setPlug(char key1,char key2){
+
 	this->plugs.push_back(make_pair(key1,key2));
+
 }
 
 void Enigma::swap(string &data){
