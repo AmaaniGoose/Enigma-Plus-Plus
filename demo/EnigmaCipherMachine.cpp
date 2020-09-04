@@ -7,9 +7,9 @@ int main(){
 
 	Enigma enigma;
 
-	enigma.SetRotors(1,2,3);
+	// enigma.setRotors(1,2,3);
 
-	enigma.SetOffset(7,19,23);
+	// enigma.setOffset(7,19,23);
 
 	enigma.setPlug('B','J');	enigma.setPlug('C','Y');
 	enigma.setPlug('D','X');	enigma.setPlug('E','Z');
@@ -20,6 +20,6 @@ int main(){
 	cout<<"Encoded Message: ";
 	cout<<enigma.encrypt("Hello World!");
 
-	cout<<"Decoded Message: ";
-	cout<<enigma.decrypt("ANJUS TKONS!");
+	// cout<<"Decoded Message: ";
+	// cout<<enigma.decrypt("ANJUS TKONS!");
 }
