@@ -7,9 +7,9 @@ int main(){
 
 	Enigma enigma;
 
-	// enigma.setRotors(1,2,3);
+	enigma.setRotors(1,2,3);
 
-	// enigma.setOffset(7,19,23);
+	enigma.setOffset(7,19,23);
 
 	enigma.setPlug('B','J');	enigma.setPlug('C','Y');
 	enigma.setPlug('D','X');	enigma.setPlug('E','Z');
@@ -18,8 +18,10 @@ int main(){
 	enigma.setPlug('Q','V');	enigma.setPlug('T','U');
 
 	cout<<"Encoded Message: ";
-	cout<<enigma.encrypt("Hello World!\n");
+	string message="HELLO WORLD!";
+	cout<<enigma.encrypt(message);
 
 	cout<<"Decoded Message: ";
-	cout<<enigma.decrypt("ANJUS TKONS!\n");
+	string ciphertext="VERRG NGBRW!";
+	cout<<enigma.decrypt(ciphertext);
 }

@@ -20,3 +20,37 @@ void Enigma::setOffset(int rotor1,int rotor2,int rotor3){
 	this->rotors[2].second=rotor3;
 
 }
+
+vector<vector<pair<char,char>>> Rotors=settings();
+
+char Enigma::modify(char key,int n){
+
+	cout<<key<<"->";
+	for(int i=0;i<Rotors[n].size();i++){
+
+		if(key==Rotors[n][i].first)
+			key=Rotors[n][i].second;
+
+		else if(key==Rotors[n][i].second)
+			key=Rotors[n][i].first;
+	}
+	cout<<key<<" ";
+
+	return key;
+}
+
+vector<pair<char,char>> Reflector=reflection();
+
+char Enigma::reflect(char key){
+
+	for(int i=0;i<Reflector.size();i++){
+
+		if(key==Reflector[i].first)
+			key=Reflector[i].second;
+
+		else if(key==Reflector[i].second)
+			key=Reflector[i].first;
+	}
+
+	return key;
+}

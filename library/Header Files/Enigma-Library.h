@@ -14,6 +14,9 @@ class Enigma {
 		void capitalize(string &data);
 		void swap(string &data);
 
+		char modify(char key,int n);
+		char reflect(char key);
+
 	public:
 
 		void setRotors(int slot1,int slot2,int slot3);
@@ -21,8 +24,8 @@ class Enigma {
 
 		void setPlug(char key1,char key2);
 
-		string encrypt(string message);
-		string decrypt(string ciphertext);
+		string encrypt(string &message);
+		string decrypt(string &ciphertext);
 };
 
 #endif
