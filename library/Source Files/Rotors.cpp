@@ -23,34 +23,44 @@ void Enigma::setOffset(int rotor1,int rotor2,int rotor3){
 
 vector<vector<pair<char,char>>> Rotors=settings();
 
-char Enigma::modify(char key,int n){
+void Enigma::modify(char *key,int n){
 
-	cout<<key<<"->";
-	for(int i=0;i<Rotors[n].size();i++){
+	n--;
 
-		if(key==Rotors[n][i].first)
-			key=Rotors[n][i].second;
+	for(int i=0;i<Rotors[n].size();i++)
+		if(*key==Rotors[n][i].first){
+			*key=Rotors[n][i].second;
+			return;
+		}
+}
 
-		else if(key==Rotors[n][i].second)
-			key=Rotors[n][i].first;
-	}
-	cout<<key<<" ";
+void Enigma::modify2(char *key,int n){
 
-	return key;
+	n--;
+
+	for(int i=0;i<Rotors[n].size();i++)
+		if(*key==Rotors[n][i].second){
+			*key=Rotors[n][i].first;
+			return;
+		}
+
 }
 
 vector<pair<char,char>> Reflector=reflection();
 
-char Enigma::reflect(char key){
+void Enigma::reflect(char *key){
 
 	for(int i=0;i<Reflector.size();i++){
 
-		if(key==Reflector[i].first)
-			key=Reflector[i].second;
+		if(*key==Reflector[i].first){
+			*key=Reflector[i].second;
+			return;
+		}
 
-		else if(key==Reflector[i].second)
-			key=Reflector[i].first;
+		else if(*key==Reflector[i].second){
+			*key=Reflector[i].first;
+			return;
+		}
 	}
 
-	return key;
 }

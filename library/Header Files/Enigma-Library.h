@@ -14,8 +14,9 @@ class Enigma {
 		void capitalize(string &data);
 		void swap(string &data);
 
-		char modify(char key,int n);
-		char reflect(char key);
+		void modify(char *key,int n);
+		void modify2(char *key,int n);
+		void reflect(char *key);
 
 	public:
 
@@ -24,8 +25,8 @@ class Enigma {
 
 		void setPlug(char key1,char key2);
 
-		string encrypt(string &message);
-		string decrypt(string &ciphertext);
+		string encrypt(string message);
+		string decrypt(string ciphertext);
 };
 
 #endif

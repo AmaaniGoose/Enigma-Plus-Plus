@@ -18,10 +18,9 @@ int main(){
 	enigma.setPlug('Q','V');	enigma.setPlug('T','U');
 
 	cout<<"Encoded Message: ";
-	string message="HELLO WORLD!";
-	cout<<enigma.encrypt(message);
+	cout<<enigma.encrypt("Hello World!\n");
 
 	cout<<"Decoded Message: ";
-	string ciphertext="VERRG NGBRW!";
+	string ciphertext="IUPPW VWHPK!";
 	cout<<enigma.decrypt(ciphertext);
 }
