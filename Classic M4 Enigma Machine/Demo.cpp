@@ -10,10 +10,9 @@ int main(){
 
     string plaintext="Hello, World!";
 
-    ciphertext=enigma.encrypt(plaintext);
+    string ciphertext=enigma.convert(plaintext);
     cout<<"Encoded Message: "<<ciphertext;
 
-    plaintext=anigma.decrypt(ciphertext);
+    plaintext=anigma.convert(ciphertext);
     cout<<"Decoded Message: "<<plaintext;
-
 }
